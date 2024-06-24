@@ -6,13 +6,13 @@ use Illuminate\Http\Request;
 
 class ProfileController extends Controller
 {
-    public function index($id)
+    public function index(Request $request)
     {
         $name = "Donal Trump";
         $age = "75";
 
         $data = [
-            "id" => $id,
+            "id" => $request->id,
             "name" => $name,
             "age" => $age
         ];
